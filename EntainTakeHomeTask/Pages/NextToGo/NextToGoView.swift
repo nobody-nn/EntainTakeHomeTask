@@ -137,7 +137,11 @@ private extension NextToGoView {
         Button {
             nextToGoViewModel.manualRefresh()
         } label: {
-            Symbols.refresh
+            if (nextToGoViewModel.isLoading) {
+                ProgressView()
+            } else {
+                Symbols.refresh
+            }
         }
         .disabled(nextToGoViewModel.isLoading)
         .accessibilityLabel("refresh race list")
