@@ -110,7 +110,7 @@ private extension NextToGoView {
                     } label: {
                         HStack {
                             // remaining time
-                            RemainingTimeView(title: raceSummary.advertisedStart.displayStart)
+                            RemainingTimeView(title: raceSummary.advertisedStart.displayStart, isExpired: raceSummary.advertisedStart.remainingSeconds < 0)
                             // meeting name + race number + race name
                             RaceItemDetailView(raceSummary: raceSummary)
                         }

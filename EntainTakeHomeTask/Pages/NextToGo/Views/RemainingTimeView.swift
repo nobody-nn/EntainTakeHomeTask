@@ -10,13 +10,15 @@ import SwiftUI
 /// Count down time view with a clock icon
 struct RemainingTimeView: View {
     var title: String = "0s"
+    var isExpired: Bool = false
+    
     var body: some View {
         VStack {
             Symbols.clock
                 .foregroundStyle(Theme.headerText)
             Text(title)
                 .font(.footnote)
-                .foregroundStyle(Theme.alert)
+                .foregroundStyle(isExpired ? Theme.expiredAlert : Theme.alert)
                 .padding(.top, 2)
         }
         .frame(width: 60)

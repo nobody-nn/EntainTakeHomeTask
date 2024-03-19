@@ -15,6 +15,7 @@ enum Theme {
     static let number = Color("number")
     static let contentBackground = Color("contentBackground")
     static let alert = Color("alert")
+    static let expiredAlert = Color("expiredAlert")
     static let lightBackground = Color("lightBackground")
     static let lightAccentColor = Color("lightAccentColor")
 }
