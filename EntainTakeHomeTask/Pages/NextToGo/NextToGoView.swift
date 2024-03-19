@@ -13,6 +13,8 @@ struct NextToGoView: View {
     @State private var hasAppeared = false
     @Environment(\.scenePhase) var scenePhase
     @Environment(\.isPreview) var isPreview
+    @EnvironmentObject var networkMonitor: NetworkMonitor
+    @State var showNetworkAlert = false
     
     init() {
 #if DEBUG
@@ -83,6 +85,14 @@ struct NextToGoView: View {
                 @unknown default:
                     print("Unknown state")
                 }
+            })
+            .onChange(of: networkMonitor.hasNetworkConnection, perform: { newValue in
+                showNetworkAlert = !newValue
+            })
+            .alert("No network",
+                   isPresented: $showNetworkAlert,
+                   actions: {
+                Text("OK")
             })
         }
     }

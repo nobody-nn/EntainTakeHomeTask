@@ -15,12 +15,11 @@ struct EmptyView: View {
     var body: some View {
         VStack {
             Symbols.empty
-                .resizable()
-                .scaledToFit()
-                .frame(width: 80)
+                .font(.largeTitle)
                 .foregroundStyle(Color.accentColor.opacity(0.5))
             
             Text(description ?? "Oh no, nothing is here!")
+                .lineLimit(nil)
                 .padding(.top, 30)
                 .font(.title2)
                 .foregroundStyle(Theme.bodyText)
@@ -32,7 +31,7 @@ struct EmptyView: View {
                     retryAction!()
                 }, label: {
                     GeneralButton(title: "Retry")
-                        .frame(width: 120)
+                        .controlSize(.large)
                 })
                 .padding(.top, 16)
                 .accessibilityLabel("Retry")
