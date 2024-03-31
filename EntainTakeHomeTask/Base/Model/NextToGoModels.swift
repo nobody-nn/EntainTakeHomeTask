@@ -32,7 +32,13 @@ extension RaceSummary {
 }
 #endif
 
-struct RaceSummary: Codable {
+struct RaceSummary: Codable, Hashable {
+    static func == (lhs: RaceSummary, rhs: RaceSummary) -> Bool {
+        lhs.raceID == rhs.raceID
+    }
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(raceID)
+    }
     
     let raceID, raceName: String
     let raceNumber: Int

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E36D4A02BB198D900723091 /* KeyboardTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36D49F2BB198D900723091 /* KeyboardTypesView.swift */; };
+		5E36D4A52BB2ED1200723091 /* UIApplication+KeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36D4A42BB2ED1200723091 /* UIApplication+KeyWindow.swift */; };
+		5E36D4A72BB2ED5200723091 /* UIApplication+PresentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36D4A62BB2ED5200723091 /* UIApplication+PresentedController.swift */; };
+		5E36D4A92BB2EDEB00723091 /* UIViewController+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36D4A82BB2EDEB00723091 /* UIViewController+Present.swift */; };
+		5E36D4AB2BB2F14300723091 /* View+FirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36D4AA2BB2F14300723091 /* View+FirstAppear.swift */; };
+		5E36D4AF2BB445FC00723091 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36D4AE2BB445FC00723091 /* GameViewModel.swift */; };
+		5E36D4B12BB4465600723091 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36D4B02BB4465600723091 /* GameView.swift */; };
+		5E36D4B42BB51C1E00723091 /* ViewThatFitsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36D4B32BB51C1E00723091 /* ViewThatFitsSample.swift */; };
 		5E3A008B2BA16FCE002A6763 /* EntainTakeHomeTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A008A2BA16FCE002A6763 /* EntainTakeHomeTaskApp.swift */; };
 		5E3A008D2BA16FCE002A6763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A008C2BA16FCE002A6763 /* ContentView.swift */; };
 		5E3A008F2BA16FD0002A6763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3A008E2BA16FD0002A6763 /* Assets.xcassets */; };
@@ -45,6 +53,10 @@
 		5E4FB4162BA479B80085B6CE /* UITestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FB4152BA479B80085B6CE /* UITestingHelper.swift */; };
 		5E4FB4182BA47F360085B6CE /* NextToGoFailureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FB4172BA47F360085B6CE /* NextToGoFailureUITests.swift */; };
 		5E4FB41C2BA55D000085B6CE /* FilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FB41B2BA55D000085B6CE /* FilterTests.swift */; };
+		5E9E7E202BB932F4006BD203 /* View+ReadSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9E7E1F2BB932F4006BD203 /* View+ReadSize.swift */; };
+		5E9E7E222BB98173006BD203 /* View+ConditionalVIewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9E7E212BB98173006BD203 /* View+ConditionalVIewModifier.swift */; };
+		5E9E7E242BB9819A006BD203 /* Bool+Available.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9E7E232BB9819A006BD203 /* Bool+Available.swift */; };
+		5E9E7E262BB9839D006BD203 /* View+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9E7E252BB9839D006BD203 /* View+Modifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +77,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E36D49F2BB198D900723091 /* KeyboardTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypesView.swift; sourceTree = "<group>"; };
+		5E36D4A42BB2ED1200723091 /* UIApplication+KeyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+KeyWindow.swift"; sourceTree = "<group>"; };
+		5E36D4A62BB2ED5200723091 /* UIApplication+PresentedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+PresentedController.swift"; sourceTree = "<group>"; };
+		5E36D4A82BB2EDEB00723091 /* UIViewController+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Present.swift"; sourceTree = "<group>"; };
+		5E36D4AA2BB2F14300723091 /* View+FirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+FirstAppear.swift"; sourceTree = "<group>"; };
+		5E36D4AC2BB42FC000723091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5E36D4AE2BB445FC00723091 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5E36D4B02BB4465600723091 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		5E36D4B32BB51C1E00723091 /* ViewThatFitsSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsSample.swift; sourceTree = "<group>"; };
 		5E3A00872BA16FCE002A6763 /* EntainTakeHomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntainTakeHomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3A008A2BA16FCE002A6763 /* EntainTakeHomeTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntainTakeHomeTaskApp.swift; sourceTree = "<group>"; };
 		5E3A008C2BA16FCE002A6763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +126,10 @@
 		5E4FB4152BA479B80085B6CE /* UITestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingHelper.swift; sourceTree = "<group>"; };
 		5E4FB4172BA47F360085B6CE /* NextToGoFailureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoFailureUITests.swift; sourceTree = "<group>"; };
 		5E4FB41B2BA55D000085B6CE /* FilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTests.swift; sourceTree = "<group>"; };
+		5E9E7E1F2BB932F4006BD203 /* View+ReadSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ReadSize.swift"; sourceTree = "<group>"; };
+		5E9E7E212BB98173006BD203 /* View+ConditionalVIewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ConditionalVIewModifier.swift"; sourceTree = "<group>"; };
+		5E9E7E232BB9819A006BD203 /* Bool+Available.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Available.swift"; sourceTree = "<group>"; };
+		5E9E7E252BB9839D006BD203 /* View+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +158,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E36D49E2BB198B600723091 /* KeyboardTypes */ = {
+			isa = PBXGroup;
+			children = (
+				5E36D49F2BB198D900723091 /* KeyboardTypesView.swift */,
+			);
+			path = KeyboardTypes;
+			sourceTree = "<group>";
+		};
+		5E36D4A12BB2ECF300723091 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E36D4A42BB2ED1200723091 /* UIApplication+KeyWindow.swift */,
+				5E36D4A62BB2ED5200723091 /* UIApplication+PresentedController.swift */,
+				5E36D4A82BB2EDEB00723091 /* UIViewController+Present.swift */,
+				5E36D4AA2BB2F14300723091 /* View+FirstAppear.swift */,
+				5E9E7E1F2BB932F4006BD203 /* View+ReadSize.swift */,
+				5E9E7E212BB98173006BD203 /* View+ConditionalVIewModifier.swift */,
+				5E9E7E252BB9839D006BD203 /* View+Modifier.swift */,
+				5E9E7E232BB9819A006BD203 /* Bool+Available.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E36D4AD2BB445E900723091 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				5E36D4AE2BB445FC00723091 /* GameViewModel.swift */,
+				5E36D4B02BB4465600723091 /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		5E36D4B22BB51C0300723091 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E36D4B32BB51C1E00723091 /* ViewThatFitsSample.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5E3A007E2BA16FCE002A6763 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +221,7 @@
 		5E3A00892BA16FCE002A6763 /* EntainTakeHomeTask */ = {
 			isa = PBXGroup;
 			children = (
+				5E36D4AC2BB42FC000723091 /* Info.plist */,
 				5E3A00BB2BA174AA002A6763 /* Pages */,
 				5E3A00B42BA17039002A6763 /* Base */,
 				5E3A00C32BA177B3002A6763 /* Resources */,
@@ -196,6 +262,7 @@
 		5E3A00B42BA17039002A6763 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				5E36D4A12BB2ECF300723091 /* Extensions */,
 				5E4FB3F52BA3251D0085B6CE /* Mocks */,
 				5E4FB3E62BA2B3160085B6CE /* Views */,
 				5E3A00C72BA17834002A6763 /* JSON */,
@@ -274,6 +341,9 @@
 		5E3A00CE2BA1B8DE002A6763 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5E36D4B22BB51C0300723091 /* Views */,
+				5E36D4AD2BB445E900723091 /* Game */,
+				5E36D49E2BB198B600723091 /* KeyboardTypes */,
 				5E3A00CF2BA1B8FC002A6763 /* SettingView.swift */,
 			);
 			path = Settings;
@@ -476,18 +546,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E36D4B42BB51C1E00723091 /* ViewThatFitsSample.swift in Sources */,
 				5E4FB3F92BA32E970085B6CE /* GeneralButton.swift in Sources */,
 				5E3A00CD2BA1B7D1002A6763 /* Symbols.swift in Sources */,
 				5E4FB3F22BA321D00085B6CE /* RaceItemDetailView.swift in Sources */,
 				5E3A00D02BA1B8FC002A6763 /* SettingView.swift in Sources */,
 				5E3A00BA2BA1734C002A6763 /* NetworkManager.swift in Sources */,
 				5E3A00CB2BA1B559002A6763 /* Theme.swift in Sources */,
+				5E9E7E242BB9819A006BD203 /* Bool+Available.swift in Sources */,
+				5E36D4A52BB2ED1200723091 /* UIApplication+KeyWindow.swift in Sources */,
+				5E9E7E222BB98173006BD203 /* View+ConditionalVIewModifier.swift in Sources */,
+				5E36D4AF2BB445FC00723091 /* GameViewModel.swift in Sources */,
 				5E4FB3ED2BA2CB830085B6CE /* FilterViewModel.swift in Sources */,
+				5E36D4AB2BB2F14300723091 /* View+FirstAppear.swift in Sources */,
+				5E9E7E202BB932F4006BD203 /* View+ReadSize.swift in Sources */,
 				5E4FB3DF2BA262110085B6CE /* FilterView.swift in Sources */,
 				5E4FB3F72BA3252B0085B6CE /* MockData.swift in Sources */,
 				5E4FB4062BA3F9580085B6CE /* NetworkNextToGoSuccessMock.swift in Sources */,
 				5E3A00BE2BA1750C002A6763 /* NextToGoView.swift in Sources */,
+				5E36D4A02BB198D900723091 /* KeyboardTypesView.swift in Sources */,
+				5E9E7E262BB9839D006BD203 /* View+Modifier.swift in Sources */,
 				5E3A00C22BA17561002A6763 /* NextToGoViewModel.swift in Sources */,
+				5E36D4A92BB2EDEB00723091 /* UIViewController+Present.swift in Sources */,
 				5E46BBB72BA8665E00145DDB /* NetworkMonitor.swift in Sources */,
 				5E3A00B72BA170EB002A6763 /* NextToGoModels.swift in Sources */,
 				5E4FB3FD2BA3B4EA0085B6CE /* IsPreviewEnvironmentModel.swift in Sources */,
@@ -499,7 +579,9 @@
 				5E4FB3FF2BA3BDC90085B6CE /* EmptyView.swift in Sources */,
 				5E3A008B2BA16FCE002A6763 /* EntainTakeHomeTaskApp.swift in Sources */,
 				5E3A00D42BA1C294002A6763 /* RaceCategory.swift in Sources */,
+				5E36D4A72BB2ED5200723091 /* UIApplication+PresentedController.swift in Sources */,
 				5E4FB4162BA479B80085B6CE /* UITestingHelper.swift in Sources */,
+				5E36D4B12BB4465600723091 /* GameView.swift in Sources */,
 				5E4FB3E82BA2B3330085B6CE /* FilterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,6 +755,7 @@
 				DEVELOPMENT_TEAM = Q9G6L829D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EntainTakeHomeTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -703,6 +786,7 @@
 				DEVELOPMENT_TEAM = Q9G6L829D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EntainTakeHomeTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -95,6 +95,7 @@ struct NextToGoView: View {
                 Text("OK")
             })
         }
+        .navigationViewStyle(.stack)
     }
 }
 

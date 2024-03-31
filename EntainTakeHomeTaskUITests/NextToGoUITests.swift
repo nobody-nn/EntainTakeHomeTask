@@ -22,6 +22,15 @@ final class NextToGoSuccessUITests: XCTestCase {
     override func tearDown() {
         app = nil
     }
+    
+    @available(iOS 17.0, *)
+    func test_automated_accessibility() {
+        do {
+            try app.performAccessibilityAudit()
+        } catch {
+            XCTFail("The automated accessibility audit fail because [\(error.localizedDescription)]")
+        }
+    }
 
     /// races
     func test_race_list_with_first_five_are_valid() {

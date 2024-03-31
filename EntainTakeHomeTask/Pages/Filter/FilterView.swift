@@ -8,6 +8,24 @@
 import SwiftUI
 import WaterfallGrid
 
+import TipKit
+
+@available(iOS 17, *)
+struct MyTip: Tip {
+    var title: Text {
+        Text("Careful!")
+    }
+    
+    var message: Text? {
+        Text("Unselected all filters that you have selected")
+    }
+    
+    var image: Image? {
+        Image(systemName: "arrow.uturn.backward")
+    }
+}
+
+
 struct FilterView: View {
     @StateObject var filterViewModel: FilterViewModel
     @Binding var shouldShowFilter: Bool
@@ -78,6 +96,14 @@ private extension FilterView {
                 filterViewModel.resetAll()
             }, label: {
                 GeneralButton(title: "Reset")
+            })
+//            .popoverTip(MyTip())
+            .modifier(body: {
+                if #available(iOS 17, *) {
+                    $0.popoverTip(MyTip())
+                } else {
+                    $0
+                }
             })
             .accessibilityLabel("Reset")
             

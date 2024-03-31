@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct EntainTakeHomeTaskApp: App {
@@ -14,6 +15,13 @@ struct EntainTakeHomeTaskApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .task {
+                    if #available(iOS 17.0, *) {
+                        try? Tips.configure()
+                    } else {
+                        // Fallback on earlier versions
+                    }
+                }
                 .environmentObject(networkMonitor)
         }
     }
